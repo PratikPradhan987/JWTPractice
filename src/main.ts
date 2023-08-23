@@ -1,4 +1,4 @@
-import { createServer } from "./src/createServer"
+import { createServer } from "./utils/createServer"
 const PORT = 3000;
 
 function main() {
