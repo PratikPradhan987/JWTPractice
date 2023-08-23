@@ -1,7 +1,7 @@
 import { createServer } from "./utils/createServer"
 const PORT = 3000;
 
-function main() {
+(function main() {
 
     const app = createServer();
     
@@ -9,6 +9,6 @@ function main() {
         console.log(`listening on ${PORT} `);
     })
     
-}
+})();
 
-main()
+// main()
