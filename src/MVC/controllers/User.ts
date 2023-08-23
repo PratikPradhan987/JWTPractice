@@ -23,7 +23,12 @@ export const Jtoken = (req: Request<{},{},Userdto>, res: Response) => {
     
      
     // res.cookie("jToken",token)
-    var Cookies = cookie.serialize('Jtoken', token);
-    return res.send(Cookies)
+    // var Cookies = cookie.serialize('Jtoken', token);
+    // return res.send(Cookies)
+
+    res.cookie("Jtoken", token)
+
+    return res.send("OKOK0");
+
     // if ()
 }
