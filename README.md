@@ -17,13 +17,16 @@ Dev-dependencies
 ```
 dependencies
 ```bash
-  Npm install express
+  Npm install express jsonwebtoken cookie
 ```
 Scripts
 ```bash
   "dev": "tsnd --respawn --transpile-only main.ts"
 ```
 
+## File Structure
+
+![App Screenshot](https://github.com/PratikPradhan987/JWTPractice/blob/main/GithubFiles/Screenshots/File-Structure.png)
 
 ## Breaking code into small files
 
