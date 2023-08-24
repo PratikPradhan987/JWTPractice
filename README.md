@@ -1,6 +1,7 @@
 # JWTPractice
 Using express and typescript 
 
+
 ## Steps on Starting the project 
 
 Using typescript, express 
@@ -66,4 +67,26 @@ const PORT = 3000;
 })();
 
 // main()
+```
+
+Creating Routes
+```javascript
+import express, { Response, response } from "express";
+const router = express.Router();
+import cookie, { serialize } from "cookie";
+
+import { DashBoard, Jtoken } from "../controllers/User";
+
+router.get("/dashboard", DashBoard);
+
+export { router as UserRoute}
+```
+
+Creating Controllers
+```javascript
+import { Request, Response } from "express";
+
+export const DashBoard = (req: Request , res: Response ) => {
+    return res.send("DashBoard Done");
+}
 ```
