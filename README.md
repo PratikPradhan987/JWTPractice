@@ -25,6 +25,23 @@ Scripts
   "dev": "tsnd --respawn --transpile-only main.ts"
 ```
 
+## Adding a docker images for mongo 
+install docker before 
+```bash
+  sudo apt install docker.io
+```
+
+```bash
+  docker pull mongo:latest
+```
+```bash
+  docker run --name ("mongo_test") -p 27017:27017 -d mongo
+```
+
+```bash
+  docker exec -it ("mopngo-test") bash
+```
+
 ## File Structure
 
 ![App Screenshot](https://github.com/PratikPradhan987/JWTPractice/blob/main/GithubFiles/Screenshots/File-Structure.png)
